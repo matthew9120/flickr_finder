@@ -26,11 +26,13 @@ class _ImgListState extends State<ImgList> {
     _downloadImages();
   }
 
-  void _goToImageScreen() {
+  void _goToImageScreen(String imgUrl) {
+    imgUrl = imgUrl.replaceAll('_m.jpg', '_b.jpg');
+    
     Navigator.push(
       context,
       MaterialPageRoute(
-        builder: (context) => const ImgPage()
+        builder: (context) => ImgPage(imgUrl)
       )
     );
   }
@@ -57,9 +59,7 @@ class _ImgListState extends State<ImgList> {
                     ]
                 ),
               ),
-              onTap: () {
-
-              },
+              onTap: () => _goToImageScreen(item['media']['m']),
             ),
           );
         });
