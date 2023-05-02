@@ -1,7 +1,7 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="pl.silesiaits.flickr_finder">
    <application
-        android:label="flickr_finder"
+        android:label="Flickr finder"
         android:name="${applicationName}"
         android:icon="@mipmap/ic_launcher">
         <activity

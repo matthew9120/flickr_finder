@@ -1,6 +1,6 @@
 {
-    "name": "flickr_finder",
-    "short_name": "flickr_finder",
+    "name": "Flickr finder",
+    "short_name": "Flickr finder",
     "start_url": ".",
     "display": "standalone",
     "background_color": "#0175C2",
