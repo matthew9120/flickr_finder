@@ -98,7 +98,12 @@ class _MyHomePageState extends State<MyHomePage> {
           children: <Widget>[
             Container(
               alignment: Alignment.centerLeft,
-              margin: const EdgeInsets.all(20.0),
+              margin: const EdgeInsets.only(
+                top: 50.0,
+                right: 20.0,
+                bottom: 20.0,
+                left: 20.0,
+              ),
               child: const Text(
                 'Podaj tag:',
                 style: TextStyle(
